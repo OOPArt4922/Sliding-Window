@@ -1,0 +1,30 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	display: flex;
+
+	justify-content: center;
+
+	/* align-items: center; */
+}
+
+#controls {
+    margin: 10px;
+	position: absolute;
+}
+
+#settings{
+    margin: 10px;
+    
+    top: 45%;
+	position: absolute;
+}
+
+canvas {
+	display: block;
+}

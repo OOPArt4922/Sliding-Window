@@ -14,18 +14,19 @@
         <title>Sliding Windows</title>
     </head>
 
-    <body>
+    <body oncontextmenu="return false;">
         <div id="controls">
             <input type="button" value="Start">
             <input type="button" value="Send" disabled>
-            <input type="button" value="S P E E D" disabled>
         </div>
 
         <div id="settings">
-            <label for="n-pkt">Number of Packets: </label><input type="number" name="n-pkt"><br>
-            <label for="start-Wsz">Start Window Size: </label><input type="number" name="start-Wsz"><br>
-            <label for="end-Wsz">End Window Size: </label><input type="number" name="end-Wsz"><br>
-            <label for="RTT-start">Starting Round Trip Time: </label><input type="number" name="RTT-start"><br>
+            <label for="n-pkt">Number of Packets: </label><input type="number" name="n-pkt" value="10" min="1"><br>
+            <label for="start-Wsz">Start Window Size: </label><input type="number" name="start-Wsz" value="5"
+                min="1"><br>
+            <label for="end-Wsz">End Window Size: </label><input type="number" name="end-Wsz" value="3" min="1"><br>
+            <label for="RTT-start">Starting Round Trip Time: </label><input type="number" name="RTT-start" value="15"
+                min="1" max="1000"><br>
         </div>
 
         <script src="../js/Packet.js"></script>
